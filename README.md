@@ -1,42 +1,64 @@
-# Ayudantia-capsula-4-tel335 Control Año 2022
+# Ayudantia-capsula-4-tel335
 
-# tel335-control3-soccer-app
-Repositorio del Control 3 del ramo Tel335 Diseño de Aplicaciones Web y Moviles, se requiere implementar un sitio con frontend y backend para ver y suscribirse a partidos de futbol
-# Backend
-## Se debe estar en la carpeta backend para instalar las dependencias
+Usando el repositorio de ejemplo del [Control 1 - Solucion](https://github.com/carlosarredondoc/control-1-rest-api-koa/tree/solucion)
 
-### Entrar al directorio
-`cd backend`
+Se requiere consumir el servicio de la api rest usando react, el cual se ubica en la carpeta backend y otra frontend, el contexto es el mismo un inventario de un almacen, en donde se necesitan.
+
+1. Cree una vista para obtener los productos disponibles
+
+~~~
+Ruta: /api/products
+Formato: JSON
+Metodo: GET
+~~~
+
+2. Añadir nuevos productos al inventario apartir de un formulario, con su boton de envio.
+
+~~~
+Ruta: /api/product
+Formato: JSON
+Metodo: POST o PUT
+~~~
+
+3. Filtre apartir de una categoria los productos, usando un **Select** o **Combox** o **Un input de texto** estilo busqueda
+
+~~~
+Ruta: /api/products/:category
+Formato: JSON
+Metodo: GET
+~~~
+
+3. Edite un producto en particular a partir de su id, utilizando un boton en el producto de edicion
+
+~~~
+Ruta: /api/products/:id
+Formato: JSON
+Metodo: PUT
+~~~
 
 
-### Instalar de dependencias
-`npm install`
+4. Agregue css centrando el formulario y componentes de este, colores a su gusto, margenes, etc
 
-### Ejecutar backend en modo desarrollador
-`npm run start:dev`
+## Backend
 
-### Ejecutar backend en modo producción
-`npm run build`
-<br/>
-`npm start`
+~~~
+cd backend
+~~~
 
-#### Por defecto el backend corre en el puerto 8000
+~~~
+npm install
+~~~
 
-### Cuentas por defecto
+~~~
+npm run start:dev
+~~~
 
-email:password
-- profesor@soccerapp.cl:12345
-- ayudante@soccerapp.cl:12345
+# Link Referencias
 
-# Frontend
+[Curso ReactJS](https://www.youtube.com/watch?v=rLoWMU4L_qE&t=1506s&pp=ygUKZmF6dCByZWFjdA%3D%3D)
 
-## Se debe estar en la carpeta frontend para instalar las dependencias
+[Proyecto Consumiendo API REST (Ingles)](https://www.youtube.com/watch?v=lsBDpQ9aQG0)
 
-### Entrar en el directorio
-`cd frontend`
+[Proyecto Practico Consumiendo un API](https://www.youtube.com/watch?v=545YvE1t3F8)
 
-### Instalar dependecias
-`npm install`
-
-### Ejecutar frontend en puerto 3000
-`npm start`
+[Reactjs Axios y Peticiones (GET PUT DELTE) (Ingles)](https://www.youtube.com/watch?v=O_yUe8qElYM)
